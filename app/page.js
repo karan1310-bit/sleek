@@ -1,6 +1,7 @@
 'use client'
 
 import About from "@/components/About";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
@@ -39,6 +40,7 @@ export default function Home() {
       <Hero />
       <About />
       <div className="h-screen w-full bg-black"></div>
+      <Footer />
     </div>
   );
 }
