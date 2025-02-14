@@ -3,14 +3,14 @@ import Curve from './Curve'
 
 const About = () => {
   return (
-    <div className="min-h-screen mt-8 sm:mt-12 text-white p-8">
+    <div className="max-h-screen mt-8 sm:mt-12 text-white p-8">
         
     <div className="max-w-7xl relative mx-auto font-['Satoshi_Variable']">
         <h1 className="text-3xl md:text-5xl lg:text-5xl font-light leading-none mb-12 sm:mb-12">
           We combine the power of strategy, design, and innovation to transform visionary ideas into extraordinary brands.
             Explore our approach.
         </h1>
-        <div className='sm:hidden h-[1px] w-[84vw] mx-auto bg-white'></div>
+        <div className='sm:hidden h-[1px] w-[85vw] mx-auto bg-white'></div>
         <Curve />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 mt-8 sm:mt-0">
           {/* Left Column */}
