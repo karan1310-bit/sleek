@@ -19,8 +19,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='min-h-screen w-full relative font-["Satoshi_Variable"]'>
-      <div className="w-full px-[14%] pt-40 md:pt-32 md:px-[22%]">
+    <div className='min-h-screen w-full relative overflow-hidden font-variable'>
+      <div className="w-full px-[9%] pt-40 md:pt-32 md:px-[22%]">
         <div className="w-[90%] md:w-[41%]">
           <h3 className="text-4xl md:text-3xl">
           At SleekFrameStudios, we create immersive digital experiences that bring purposeful brands to life.

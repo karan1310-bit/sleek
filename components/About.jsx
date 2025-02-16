@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="max-h-screen mt-8 sm:mt-12 text-white p-8">
         
-    <div className="max-w-7xl relative mx-auto font-['Satoshi_Variable']">
+    <div className="max-w-7xl relative mx-auto font-variable">
         <h1 className="text-3xl md:text-5xl lg:text-5xl font-light leading-none mb-12 sm:mb-12">
           We combine the power of strategy, design, and innovation to transform visionary ideas into extraordinary brands.
             Explore our approach.

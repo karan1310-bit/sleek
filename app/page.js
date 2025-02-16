@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import Showcase from "@/components/Showcase";
 import Lenis from "lenis";
 import { useEffect } from "react";
 
@@ -27,7 +28,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 4000);
+    }, 4100);
   }, [])
 
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Showcase />
       <Services />
       <Footer />
     </div>

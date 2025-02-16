@@ -43,8 +43,8 @@ const Navbar = () => {
       className="fixed inset-x-0 top-4 z-40 h-16 border-none transition-all duration-700 sm:inset-x-6"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
-    <nav className='flex justify-between items-center text-white py-8 px-8 font-["Satoshi_Variable"]'>
-        <h2 className='font-medium text-lg'>SleekFrame Studios</h2>
+    <nav className='flex justify-between items-center text-white py-8 px-8 font-variable'>
+        <h2 className='font-medium text-base sm:text-lg'>SleekFrame Studios</h2>
             <div className="hidden md:flex h-full items-center gap-1">
               {navItems.map((item, index) => (
                 <a
@@ -56,7 +56,7 @@ const Navbar = () => {
                 </a>
               ))}
         </div>
-        <h2 className='font-normal text-base nav-hover-btn'>Let's Talk <span className="ml-2 group-hover:ml-3 transition-all">→</span></h2>
+        <h2 className='font-normal text-sm sm:text-base nav-hover-btn'>Let's Talk <span className="ml-2 group-hover:ml-3 transition-all">→</span></h2>
     </nav>
     </header>
     </div>

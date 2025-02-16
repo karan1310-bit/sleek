@@ -1,13 +1,23 @@
 'use client'
 
-import React from 'react';
+import { useTransform, useScroll, motion } from 'framer-motion';
+import { useRef } from 'react';
 import Image from 'next/image';
 
-const ResponsiveCard = ({ color, title, description, url, src, i }) => {
+const ResponsiveCard = ({ i, title, description, src, url, color, progress, range, targetScale }) => {
+
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start end', 'start start']
+  })
+  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1])
+  const scale = useTransform(progress, range, [1, targetScale]);
+
   return (
-    <div className="min-h-screen flex items-center justify-center font-['Satoshi_Variable'] sticky top-0 p-4">
-      <div
-        className="flex flex-col relative w-[320px] h-[400px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[500px] lg:w-[900px] lg:h-[500px] xl:w-[1000px] xl:h-[500px] rounded-[25px] p-4 sm:p-6 md:p-[50px] origin-top"
+    <div className="min-h-screen flex items-center justify-center font-variable sticky top-0 p-4">
+      <motion.div
+        className="flex flex-col relative w-[320px] h-[450px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[500px] lg:w-[900px] lg:h-[500px] xl:w-[1000px] xl:h-[500px] rounded-[25px] p-4 sm:p-6 md:p-[50px] origin-top"
         style={{ 
           backgroundColor: color,
           top: `calc(-5vh + ${i * 25}px)`
@@ -47,18 +57,19 @@ const ResponsiveCard = ({ color, title, description, url, src, i }) => {
           </div>
 
           {/* Image Container */}
-          <div className="relative w-full md:w-[60%] h-[200px] sm:h-[250px] md:h-full rounded-[25px] overflow-hidden">
-            <div className="w-full h-full relative">
+          <div className="relative w-[100%] md:w-[60%] h-[140px] sm:h-[200px] md:h-full rounded-[25px] overflow-hidden">
+            <motion.div className="w-full h-full object-fill"
+            style={{scale: imageScale}} >
               <Image
                 fill
                 src={`/images/${src}`}
                 alt="image"
                 className="object-cover"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

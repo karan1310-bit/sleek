@@ -39,7 +39,7 @@ const Loader = () => {
     <div
       id="loader"
       ref={loaderRef}
-      className="h-screen w-full flex justify-center items-center gap-2 bg-black font-['Satoshi_Variable'] fixed top-0 z-50"
+      className="h-screen w-full flex justify-center items-center gap-2 bg-black font-variable fixed top-0 z-50"
     >
       <h3 className="text-xl sm:text-2xl text-white">Next-gen</h3>
       <h3 className="text-xl sm:text-2xl text-white">Brands,</h3>
