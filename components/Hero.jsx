@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
       </div>
       <div id="hero" className="w-full hidden sm:block absolute bottom-8 sm:bottom-2 left-0">
-        <h1 className="overflow-hidden text-7xl px-2 sm:p-1 sm:text-[12rem] font-normal tracking-tight leading-none whitespace-nowrap">
+        <h1 className="overflow-hidden text-[12.4vw] px-2 font-normal tracking-tight leading-none whitespace-nowrap">
           {textArray.map((letter, index) => (
             <span key={index} className="inline-block">
               {letter}
@@ -41,7 +41,7 @@ const Hero = () => {
         </h1>
       </div>
       <div id="hero" className="w-full sm:hidden block absolute bottom-8 sm:bottom-2 left-0">
-        <h1 className="overflow-hidden text-[20vw] px-2 sm:p-1 sm:text-[12rem] font-normal tracking-tight leading-none whitespace-nowrap">
+        <h1 className="overflow-hidden text-[20vw] px-2 font-normal tracking-tight leading-none whitespace-nowrap">
           {textSm.map((letter, index) => (
             <span key={index} className="inline-block">
               {letter}

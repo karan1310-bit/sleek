@@ -88,7 +88,7 @@ export default function Home() {
 
   return (
   
-    <div ref={containerRef} className="container min-h-screen w-full bg-black text-white relative transition-colors ease-linear duration-100">
+    <div ref={containerRef} className="min-h-screen w-full bg-black text-white relative transition-colors ease-linear duration-100">
       <Cursor />
       <Preloader />
       <Navbar />
