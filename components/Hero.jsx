@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useRef } from "react";
 
 const textArray = "SleekFrameStudios".split(""); // Split text into an array of letters
-
+const textSm = "SleekFrame".split("");
 const Hero = () => {
   const heroRef = useRef(null);
 
@@ -11,8 +11,8 @@ const Hero = () => {
     gsap.from("#hero h1 span", {
       opacity: 0,
       duration: 0.1,
-      y: 30, // Animate each letter from y: 100
-      stagger: 0.06, // Animate one by one
+      y: 35, // Animate each letter from y: 100
+      stagger: 0.05, // Animate one by one
       ease: "power3.out",
       delay: 4,
     });
@@ -31,9 +31,18 @@ const Hero = () => {
           <p className="mt-6">Scroll</p>
         </div>
       </div>
-      <div id="hero" className="w-full absolute bottom-8 sm:bottom-2 left-0">
+      <div id="hero" className="w-full hidden sm:block absolute bottom-8 sm:bottom-2 left-0">
         <h1 className="overflow-hidden text-7xl px-2 sm:p-1 sm:text-[12rem] font-normal tracking-tight leading-none whitespace-nowrap">
           {textArray.map((letter, index) => (
+            <span key={index} className="inline-block">
+              {letter}
+            </span>
+          ))}
+        </h1>
+      </div>
+      <div id="hero" className="w-full sm:hidden block absolute bottom-8 sm:bottom-2 left-0">
+        <h1 className="overflow-hidden text-[20vw] px-2 sm:p-1 sm:text-[12rem] font-normal tracking-tight leading-none whitespace-nowrap">
+          {textSm.map((letter, index) => (
             <span key={index} className="inline-block">
               {letter}
             </span>

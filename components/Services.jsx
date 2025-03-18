@@ -13,7 +13,7 @@ const Services = () => {
   })
 
   return (
-    <main ref={container} className="sm:mb-[30vh] font-variable sm:mt-[30vh]">
+    <main ref={container} className="sm:mb-[20vh] font-variable sm:mt-[20vh]">
       {projects.map((project, i) => {
         const targetScale = 1 - ( (projects.length - i) * 0.05);
         return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
