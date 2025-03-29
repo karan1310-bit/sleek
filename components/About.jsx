@@ -1,11 +1,13 @@
 import React from 'react'
 import Curve from './Curve'
+import { AnimateInView } from './AnimateInView'
 
 const About = () => {
   return (
     <div className="max-h-screen mt-8 sm:mt-12 text-white p-8">
         
     <div className="max-w-7xl relative mx-auto font-variable">
+      
         <h1 className="text-3xl md:text-5xl lg:text-5xl font-light leading-none mb-12 sm:mb-12">
           We combine the power of strategy, design, and innovation to transform visionary ideas into extraordinary brands.
             Explore our approach.
@@ -15,6 +17,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 mt-8 sm:mt-0">
           {/* Left Column */}
           <div>
+          
             <h2 className="text-xl md:text-2xl font-light sm:mb-8">
               Building tomorrow's success, today.
             </h2>
