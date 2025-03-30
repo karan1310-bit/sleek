@@ -21,7 +21,7 @@ export default function Content() {
   const Section2 = () => {
     
       return (
-          <div className='flex px-6 md:px-12 flex-col md:flex-row bottom-0 justify-between items-start gap-4 overflow-hidden'>
+          <div className='flex px-6 md:px-16 flex-col md:flex-row bottom-0 justify-between items-start gap-4 overflow-hidden'>
               <h1 className='text-[8vw] font-extrabold md:text-[8vw] uppercase leading-tight'>SleekFrameStudios
               </h1>
               <p className='font-extralight'>©copyright 2025</p>
@@ -31,7 +31,7 @@ export default function Content() {
   
   const Nav = () => {
       return (
-          <div className='flex shrink-0 gap-10 md:gap-20 px-6 md:px-12 mb-10 md:mb-12'>
+          <div className='flex shrink-0 gap-10 md:gap-20 px-6 md:px-16 mb-10 md:mb-12'>
               <div className='flex flex-col font-light gap-2'>
                   <h3 className='mb-2 hover-btn uppercase w-fit text-[#ffffff80]'>About</h3>
                   <p className='font-extralight'>Home</p>

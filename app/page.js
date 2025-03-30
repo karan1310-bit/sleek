@@ -11,8 +11,8 @@ import Showcase from "@/components/Showcase";
 import Lenis from "lenis";
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Heading from "@/components/projects/Heading";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,71 +37,17 @@ export default function Home() {
     }, 3700);
   }, [])
 
-  const containerRef = useRef(null);
-  const heroRef = useRef(null);
-  const aboutRef = useRef(null);
-  const servicesRef = useRef(null);
-
-  useLayoutEffect(() => {
-    if (!containerRef.current || !heroRef.current || !aboutRef.current) return;
-
-    // Animation when reaching the Hero section
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: heroRef.current, // Hero Section as Trigger
-        start: "top 50%",
-        end: "top 20%",
-        scrub: 2,
-      },
-    }).to(containerRef.current, {
-      backgroundColor: "#000",
-      color: "#fff",
-    });
-
-    // Animation when reaching the About section
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: aboutRef.current, // About Section as Trigger
-        start: "top 50%",
-        end: "top 20%",
-        scrub: 2,
-      },
-    }).to(containerRef.current, {
-      backgroundColor: "#F5F5F5",
-      color: "#000",
-    });
-
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: servicesRef.current, // Hero Section as Trigger
-        start: "top 50%",
-        end: "top 20%",
-        scrub: 2,
-      },
-    }).to(containerRef.current, {
-      backgroundColor: "#000",
-      color: "#fff",
-    });
-
-    return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-  }, []);
-
   return (
   
-    <div ref={containerRef} className="min-h-screen w-full bg-black text-white relative transition-colors ease-linear duration-100">
+    <div className="min-h-screen w-full bg-black text-white relative">
       <Cursor />
       <Preloader />
       <Navbar />
-      <div ref={heroRef}>
-        <Hero />
-      </div>
+      <Hero />
       <About />
-      <div ref={aboutRef}>
+      <Heading />
       <Showcase />
-      </div>
-      <div ref={servicesRef}>
       <Services />
-      </div>
       <Footer />
     </div>
   );

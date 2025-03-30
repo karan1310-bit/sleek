@@ -25,28 +25,28 @@ const Hero = () => {
   }, []);
 
   const h3Lines = [
-    "At SleekFrameStudios, we ",
-    "create immersive digital ",
-    "experiences that bring ",
-    "purposeful brands to life.",
+    "At SleekFrameStudios, ",
+    "we create immersive ",
+    "digital experiences that ",
+    "bring purposeful brands to life.",
   ];
 
   const pLines = [
     "As a boutique production studio specializing in design,",
-    "motion, and creative technology, we continuously push",
-    "the boundaries of digital craft to elevate",
+    "motion, and creative technology, we continuously",
+    "push the boundaries of digital craft to elevate",
     "modern advertising and campaigns.",
   ];
 
   return (
     <div className="min-h-screen w-full relative overflow-hidden font-variable">
-      <div className="w-full px-[9%] pt-40 md:pt-32 md:px-[22%]">
+      <div className="w-full px-[9%] pt-32 md:pt-32 md:px-[22%]">
         <div className="w-[90%] md:w-[41%]">
           {/* H3 Lines */}
           {h3Lines.map((line, index) => (
             <div key={index} className="overflow-hidden">
               <h3
-                className="text-4xl md:text-3xl leading-tight"
+                className="text-3xl md:text-3xl leading-tight"
                 ref={(el) => (lineRefs.current[index] = el)}
               >
                 {line}

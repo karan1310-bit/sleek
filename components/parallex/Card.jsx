@@ -15,12 +15,12 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center font-variable sticky top-0 p-4">
+    <div className="min-h-screen flex items-center justify-center font-variable sticky top-0 py-4">
       <motion.div
-        className="flex flex-col relative w-[320px] h-[450px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[500px] lg:w-[900px] lg:h-[500px] xl:w-[1000px] xl:h-[500px] rounded-[25px] p-4 sm:p-6 md:p-[50px] origin-top"
+        className="flex flex-col relative w-[360px] h-[650px] sm:w-[500px] md:w-[700px] md:h-[700px] lg:w-full lg:h-screen xl:w-full xl:h-screen rounded-[25px] p-4 sm:p-6 md:px-20 md:py-6 origin-top"
         style={{ 
           backgroundColor: color,
-          top: `calc(-5vh + ${i * 25}px)`
+          top: `calc(1vh + ${i * 0}px)`
         }}
       >
         <h2 className="text-center m-0 text-lg sm:text-xl md:text-[28px]">{title}</h2>
@@ -28,7 +28,7 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
         <div className="flex flex-col md:flex-row h-full mt-4 sm:mt-6 md:mt-[50px] gap-4 sm:gap-6 md:gap-[50px]">
           {/* Description Section */}
           <div className="w-full md:w-[40%] relative md:top-[10%]">
-            <p className="text-sm sm:text-base first-letter:text-lg sm:first-letter:text-xl md:first-letter:text-[28px] first-letter:font-['Title']">
+            <p className="text-sm sm:text-base md:text-xl first-letter:text-lg sm:first-letter:text-xl md:first-letter:text-[28px] first-letter:font-['Title']">
               {description}
             </p>
             
@@ -57,7 +57,7 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
           </div>
 
           {/* Image Container */}
-          <div className="relative w-[100%] md:w-[60%] h-[140px] sm:h-[200px] md:h-full rounded-[25px] overflow-hidden">
+          <div className="relative w-[100%] md:w-[60%] h-[300px] sm:h-[300px] md:h-[90%] rounded-[25px] overflow-hidden">
             <motion.div className="w-full h-full object-fill"
             style={{scale: imageScale}} >
               <Image

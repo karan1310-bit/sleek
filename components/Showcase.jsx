@@ -29,8 +29,8 @@ const Showcase = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
 
   return (
-    <main className="flex min-h-fit md:min-h-screen pt-[6vh] lg:pt-[20vh] items-center justify-center overflow-hidden px-[20px]">
-    <div className="w-full font-variable max-w-[90%] lg:max-w-none lg:w-[1000px] flex flex-col items-center justify-center">
+    <main className="flex min-h-fit md:min-h-screen pt-[3vh] lg:pt-[7vh] items-center justify-center overflow-hidden px-8">
+    <div className="w-full font-variable max-w-[90%] lg:max-w-none lg:w-[75%] flex flex-col items-center justify-center">
         {projects.map((project, index) => {
           return (
             <Project
