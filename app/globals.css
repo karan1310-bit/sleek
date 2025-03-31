@@ -32,3 +32,58 @@ body {
 .clip-path-footer {
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
+
+.shine-text {
+  background: linear-gradient(to right, #9a9a9a 0, white 10%, #868686 20%);
+  background-position: 0;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+.fancy-btn {
+  @apply relative border-none transition-all duration-300;
+}
+
+.fancy-btn::before,
+.fancy-btn::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+
+.fancy-btn::before {
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+}
+
+.fancy-btn::after {
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+}
+
+.fancy-btn:hover::before,
+.fancy-btn:hover::after {
+  width: 104%;
+  height: 110%;
+}

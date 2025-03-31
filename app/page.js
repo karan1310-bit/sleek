@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Heading from "@/components/projects/Heading";
+import Contact from "@/components/Contact";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,6 +49,7 @@ export default function Home() {
       <Heading />
       <Showcase />
       <Services />
+      <Contact />
       <Footer />
     </div>
   );

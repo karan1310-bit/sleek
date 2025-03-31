@@ -1,9 +1,10 @@
 import React from 'react'
+import Marquee from './Marquee'
 
 export default function Content() {
     return (
       <div className='bg-zinc-900 py-6 h-full w-full flex flex-col justify-end'>
-          
+          <Marquee />
           <Section1 />
           <Section2 />
       </div>
@@ -31,7 +32,7 @@ export default function Content() {
   
   const Nav = () => {
       return (
-          <div className='flex shrink-0 gap-10 md:gap-20 px-6 md:px-16 mb-10 md:mb-12'>
+          <div className='flex shrink-0 gap-10 md:gap-20 px-6 md:px-16 mb-10 md:mb-8'>
               <div className='flex flex-col font-light gap-2'>
                   <h3 className='mb-2 hover-btn uppercase w-fit text-[#ffffff80]'>About</h3>
                   <p className='font-extralight'>Home</p>
