@@ -14,8 +14,8 @@ const Heading = () => {
   ];
 
   const pLines = [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "From thoughtful design to seamless development, we turn ideas into digital experiences.",
+    "Explore the projects that bring bold ideas to life.",
   ];
 
   useEffect(() => {

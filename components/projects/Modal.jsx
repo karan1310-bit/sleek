@@ -45,14 +45,21 @@ export default function Modal({modal, projects}) {
             {
                 projects.map( (project, index) => {
                 const { src, color } = project
-                return <div className="h-full w-full flex items-center justify-center" style={{backgroundColor: color}} key={`modal_${index}`}>
-                    <Image 
-                    src={`/images/${src}`}
-                    width={300}
-                    height={0}
-                    alt="image"
+                return (
+                  <div
+                    className="h-full w-full flex items-center justify-center"
+                    style={{ backgroundColor: color }}
+                    key={`modal_${index}`}
+                  >
+                    <Image
+                      src={`/images/${src}`}
+                      width={300}
+                      height={0} // dummy height for requirement
+                      alt="image"
+                      style={{ height: "auto" , width: "auto" }}
                     />
-                </div>
+                  </div>
+                );
                 })
             }
             </div>

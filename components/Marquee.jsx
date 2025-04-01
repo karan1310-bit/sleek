@@ -5,10 +5,10 @@ const Marquee = () => {
       <div className="bg-zinc-900 w-full mb-16">
         {/* Top Border */}
         <div className="border-t border-gray-500 w-full" />
-        <div className="border-b border-gray-500 w-full mt-1" />
+        <div className="border-b border-gray-500 w-full mt-[2px]" />
   
         {/* Marquee Content */}
-        <div className="overflow-hidden py-8">
+        <div className="overflow-hidden py-4">
           <div className="flex whitespace-nowrap text-white text-[5vw] font-light font-variable uppercase px-6">
             <div className="flex animate-marquee items-center">
               {[...Array(16)].map((_, i) => (
@@ -29,7 +29,7 @@ const Marquee = () => {
   
         {/* Bottom Border */}
         <div className="border-b border-gray-500 w-full" />
-        <div className="border-b border-gray-500 w-full mt-1" />
+        <div className="border-b border-gray-500 w-full mt-[2px]" />
   
         <style jsx global>{`
           @keyframes marquee {
