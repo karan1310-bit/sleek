@@ -42,13 +42,13 @@ const About = () => {
   }, []);
   return (
     <div
-      className="max-h-screen mt-8 sm:mt-12 text-white p-8"
+      className="max-h-screen mt-2 sm:mt-12 text-white px-6 lg:p-8"
       ref={containerRef}
     >
-      <div className="w-full px-8 md:px-12 relative mx-auto font-variable">
+      <div className="w-full md:px-12 relative mx-auto font-variable">
         {/* H1 Lines */}
         {h1Lines.map((line, index) => (
-          <div key={index} className="overflow-hidden mb-2">
+          <div key={index} className="overflow-hidden">
             <h1
               className="text-3xl md:text-5xl lg:text-5xl font-light leading-none"
               ref={(el) => (lineRefs.current[index] = el)}

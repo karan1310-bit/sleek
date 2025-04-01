@@ -40,10 +40,10 @@ const Navbar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-40 h-16 border-none transition-all duration-700 sm:inset-x-6"
+      className="fixed inset-x-0 top-4 sm:top-2 z-40 h-12 sm:h-16 border-none transition-all duration-700 sm:inset-x-6"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
-    <nav className='flex justify-between items-center text-white py-8 px-8 font-variable'>
+    <nav className='flex justify-between items-center text-white py-4 md:py-6 px-6 md:px-6 font-variable'>
         <h2 className='font-medium text-base sm:text-lg'>SleekFrame Studios</h2>
             <div className="hidden md:flex h-full items-center gap-1">
               {navItems.map((item, index) => (

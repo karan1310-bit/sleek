@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 
-const words = ["project", "idea", "vision", "success"];
+const words = ["project", "ideas", "vision", "success"];
 
 export default function Contact() {
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -63,21 +63,21 @@ export default function Contact() {
     return () => clearInterval(interval);
   }, [currentWordIndex]);
   return (
-    <main className="h-screen bg-black text-white py-8 flex flex-col px-12">
-      <div className="text-6xl md:text-[10vw] font-variable font-light tracking-tight leading-[0.9]">
+    <main className="h-fit sm:h-fit bg-black text-white pb-32 sm:pb-28 py-8 flex flex-col px-6 md:px-16">
+      <div className="text-7xl md:text-[10vw] font-variable font-light tracking-tight leading-[0.9]">
         <p>let’s discuss your</p>
         <p>
           next <LiaLongArrowAltRightSolid className="inline-block text-slate-100 text-[10vw] ml-2" />{" "}
           <span
             ref={wordContainerRef}
-            className="inline-block whitespace-nowrap ml-2"
+            className="inline-block whitespace-nowrap pr-12 sm:pr-0 sm:ml-2"
           >
             {splitWordToSpans(words[currentWordIndex])}
           </span>
         </p>
       </div>
 
-      <div className="mt-20 text-xl flex flex-col font-variable justify-center items-center text-white/70">
+      <div className="mt-20 sm:mt-12 text-2xl sm:text-xl flex flex-col font-variable justify-center items-center text-white/70">
         <p className="shine-text">Big ambitions?</p>
         <p className="shine-text">We match the energy.</p>
       </div>

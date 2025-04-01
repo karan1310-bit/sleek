@@ -15,21 +15,21 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return  (
-    <div className="min-h-screen flex items-center justify-center font-variable sticky top-0 py-4" ref={container}>
+    <div className="min-h-fit flex items-center justify-center mt-4 sm:mt-0 font-variable sticky top-0 sm:py-4" ref={container}>
       <motion.div
-        className="flex flex-col relative w-[360px] h-[650px] sm:w-[500px] md:w-[700px] md:h-[700px] lg:w-full lg:h-screen xl:w-full xl:h-screen rounded-[25px] p-4 sm:p-6 md:px-20 md:py-6 origin-top"
+        className="flex flex-col relative w-[360px] h-[800px] sm:w-[500px] md:w-[700px] md:h-[700px] lg:w-full lg:h-screen xl:w-full xl:h-screen px-0 py-4 sm:p-6 md:px-20 md:py-6 origin-top"
         style={{
           backgroundColor: color,
           scale,
           top: `calc(5vh + ${i * 0}px)`,
         }}
       >
-        <h2 className="text-center m-0 text-lg sm:text-xl md:text-[28px]">{title}</h2>
+        <h2 className="text-center m-0 text-2xl sm:text-xl md:text-[28px]">{title}</h2>
 
-        <div className="flex flex-col md:flex-row h-full mt-4 sm:mt-6 md:mt-[50px] gap-4 sm:gap-6 md:gap-[50px]">
+        <div className="flex flex-col md:flex-row h-full mt-6 sm:mt-6 md:mt-[50px] gap-4 sm:gap-6 md:gap-[50px]">
           {/* Description Section */}
           <div className="w-full md:w-[40%] relative md:top-[10%]">
-            <p className="text-sm sm:text-base md:text-xl first-letter:text-lg sm:first-letter:text-xl md:first-letter:text-[28px] first-letter:font-['Title']">
+            <p className="text-base sm:text-base md:text-xl first-letter:text-lg sm:first-letter:text-xl md:first-letter:text-[28px] first-letter:font-['Title']">
               {description}
             </p>
 
@@ -37,7 +37,7 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
               <a
                 href={url}
                 target="_blank"
-                className="text-xs underline cursor-pointer"
+                className="text-xs cursor-pointer"
               >
                 See more
               </a>
@@ -58,7 +58,7 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
           </div>
 
           {/* Image Container */}
-          <div className="relative w-full md:w-[60%] h-[300px] sm:h-[300px] md:h-[90%] rounded-[25px] overflow-hidden">
+          <div className="relative w-full mt-6 sm:mt-0 md:w-[60%] h-[350px] sm:h-[300px] md:h-[90%] rounded-[25px] overflow-hidden">
             <motion.div
               className="relative w-full h-full object-fill"
               style={{ scale: imageScale }}

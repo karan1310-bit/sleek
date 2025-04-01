@@ -40,7 +40,7 @@ export default function Modal({modal, projects}) {
 
   return (
     <>
-        <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className="h-[350px] w-[400px] absolute bg-white overflow-hidden pointer-events-none flex items-center justify-center">
+        <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className="h-[150px] w-[200px] md:h-[350px] md:w-[400px] absolute bg-white overflow-hidden pointer-events-none flex items-center justify-center">
             <div style={{top: index * -100 + "%"}} className="h-full font-variable w-full absolute transition-[top_0.5s_cubic-bezier(0.76,_0,_0.24,_1)]">
             {
                 projects.map( (project, index) => {

@@ -2,14 +2,14 @@ import React from 'react';
 
 const Marquee = () => {
     return (
-      <div className="bg-zinc-900 w-full mb-16">
+      <div className="bg-zinc-900 w-full mb-16 sm:mb-16">
         {/* Top Border */}
         <div className="border-t border-gray-500 w-full" />
         <div className="border-b border-gray-500 w-full mt-[2px]" />
   
         {/* Marquee Content */}
         <div className="overflow-hidden py-4">
-          <div className="flex whitespace-nowrap text-white text-[5vw] font-light font-variable uppercase px-6">
+          <div className="flex whitespace-nowrap text-white text-6xl md:text-[5vw] font-light font-variable uppercase px-6">
             <div className="flex animate-marquee items-center">
               {[...Array(16)].map((_, i) => (
                 <React.Fragment key={i}>

@@ -34,12 +34,12 @@ const Heading = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full mt-8 sm:mt-12">
+    <div ref={containerRef} className="w-full mt-12 px-6 md:px-20 sm:mt-12">
       {/* h1 */}
       {h1Lines.map((line, index) => (
-        <div key={index} className="overflow-hidden px-20">
+        <div key={index} className="overflow-hidden">
           <h1
-            className="text-5xl text-left font-light mb-2 font-variable"
+            className="text-3xl md:text-5xl text-left font-light mb-2 font-variable"
             ref={(el) => (lineRefs.current[index] = el)}
           >
             {line}
@@ -49,7 +49,7 @@ const Heading = () => {
 
       {/* paragraph lines */}
       {pLines.map((line, index) => (
-        <div key={index + h1Lines.length} className="overflow-hidden px-20">
+        <div key={index + h1Lines.length} className="overflow-hidden">
           <p
             className="font-variable text-gray-300 text-sm md:text-base"
             ref={(el) =>

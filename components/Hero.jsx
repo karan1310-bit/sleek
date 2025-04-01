@@ -40,8 +40,8 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen w-full relative overflow-hidden font-variable">
-      <div className="w-full px-[9%] pt-32 md:pt-32 md:px-[22%]">
-        <div className="w-[90%] md:w-[41%]">
+      <div className="w-full px-6 pt-28 md:pt-32 md:px-[22%]">
+        <div className="w-[100%] md:w-[41%]">
           {/* H3 Lines */}
           {h3Lines.map((line, index) => (
             <div key={index} className="overflow-hidden">
@@ -57,10 +57,10 @@ const Hero = () => {
           {pLines.map((line, index) => (
             <div
               key={index + h3Lines.length}
-              className={`overflow-hidden ${index === 0 ? "mt-3" : ""}`} // 👈 only line 2 gets margin
+              className={`overflow-hidden ${index === 0 ? "mt-5 md:mt-3" : ""}`} // 👈 only line 2 gets margin
             >
               <p
-                className="text-lg md:text-sm font-normal leading-tight"
+                className="text-xl md:text-sm font-normal leading-tight"
                 ref={(el) => (lineRefs.current[index + h3Lines.length] = el)}
               >
                 {line}
@@ -69,21 +69,21 @@ const Hero = () => {
           ))}
 
           {/* Scroll line */}
-          <div className="overflow-hidden mt-6">
+          <div className="overflow-hidden mt-2">
             <p
               ref={(el) =>
                 (lineRefs.current[h3Lines.length + pLines.length] = el)
               }
             >
-              Scroll |
+              Scroll
             </p>
           </div>
         </div>
       </div>
 
-      <div id="hero" className="w-full absolute bottom-8 sm:bottom-2 left-0">
+      <div id="hero" className="w-full absolute bottom-10 sm:bottom-8 px-6 md:bottom-6 lg:bottom-2 left-0">
         <h1
-          className="overflow-hidden text-[12vw] px-6 font-normal tracking-tight leading-none whitespace-nowrap"
+          className="overflow-hidden text-[11.2vw] md:text-[12vw] font-normal tracking-tight leading-none whitespace-nowrap"
           ref={heroRef}
         >
           SleekFrameStudios
