@@ -15,9 +15,9 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return  (
-    <div className="min-h-fit flex items-center justify-center mt-4 sm:mt-0 font-variable sticky top-0 sm:py-4" ref={container}>
+    <div className="min-h-fit w-full flex items-center justify-center mt-4 sm:mt-0 font-variable sticky top-0 sm:py-4" ref={container}>
       <motion.div
-        className="flex flex-col relative w-[360px] h-[800px] sm:w-[500px] md:w-[700px] md:h-[700px] lg:w-full lg:h-screen xl:w-full xl:h-screen px-0 py-4 sm:p-6 md:px-20 md:py-6 origin-top"
+        className="flex flex-col relative w-fit h-[800px] sm:w-[500px] md:w-[700px] md:h-[700px] lg:w-full lg:h-screen xl:w-full xl:h-screen px-6 py-4 sm:p-6 md:px-20 md:py-6 origin-top"
         style={{
           backgroundColor: color,
           scale,
@@ -58,7 +58,7 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
           </div>
 
           {/* Image Container */}
-          <div className="relative w-full mt-6 sm:mt-0 md:w-[60%] h-[350px] sm:h-[300px] md:h-[90%] rounded-[25px] overflow-hidden">
+          <div className="relative w-full mt-6 sm:mt-0 md:w-[55%] h-[250px] sm:h-[300px] md:h-[80%] rounded-[25px] overflow-hidden">
             <motion.div
               className="relative w-full h-full object-fill"
               style={{ scale: imageScale }}
