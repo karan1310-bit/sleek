@@ -17,18 +17,18 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
   return  (
     <div className="min-h-fit w-full flex items-center justify-center mt-4 sm:mt-0 font-variable sticky top-0 sm:py-4" ref={container}>
       <motion.div
-        className="flex flex-col relative w-fit h-[800px] sm:w-[500px] md:w-[700px] md:h-[700px] lg:w-full lg:h-screen xl:w-full xl:h-screen px-6 py-4 sm:p-6 md:px-20 md:py-6 origin-top"
+        className="flex flex-col relative w-fit h-[800px] sm:w-[700px] md:w-full md:h-[800px] lg:w-full lg:h-screen xl:w-full xl:h-screen px-6 py-4 sm:p-6 md:px-12 lg:px-20 lg:py-6 origin-top"
         style={{
           backgroundColor: color,
           scale,
           top: `calc(5vh + ${i * 0}px)`,
         }}
       >
-        <h2 className="text-center m-0 text-2xl sm:text-xl md:text-[28px]">{title}</h2>
+        <h2 className="text-center mt-4 text-2xl sm:text-xl md:text-[28px]">{title}</h2>
 
-        <div className="flex flex-col md:flex-row h-full mt-6 sm:mt-6 md:mt-[50px] gap-4 sm:gap-6 md:gap-[50px]">
+        <div className="flex flex-col md:flex-row h-full mt-8 sm:mt-6 md:mt-[50px] gap-4 sm:gap-6 md:gap-[50px]">
           {/* Description Section */}
-          <div className="w-full md:w-[40%] relative md:top-[10%]">
+          <div className="w-full md:w-[40%] lg:w-[40%] relative lg:top-[10%]">
             <p className="text-base sm:text-base md:text-xl first-letter:text-lg sm:first-letter:text-xl md:first-letter:text-[28px] first-letter:font-['Title']">
               {description}
             </p>
@@ -58,7 +58,7 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
           </div>
 
           {/* Image Container */}
-          <div className="relative w-full mt-6 sm:mt-0 md:w-[55%] h-[250px] sm:h-[300px] md:h-[80%] rounded-[25px] overflow-hidden">
+          <div className="relative w-full mt-8 sm:mt-0 lg:w-[55%] md:w-[60%] h-[250px] sm:h-[300px] md:h-[60%] lg:h-[80%] rounded-[25px] overflow-hidden">
             <motion.div
               className="relative w-full h-full object-fill"
               style={{ scale: imageScale }}

@@ -34,7 +34,7 @@ const Heading = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full mt-12 px-6 md:px-20 sm:mt-12">
+    <div id="projects" ref={containerRef} className="w-full mt-12 px-6 sm:px-12 lg:px-20 sm:mt-0 lg:mt-8">
       {/* h1 */}
       {h1Lines.map((line, index) => (
         <div key={index} className="overflow-hidden">

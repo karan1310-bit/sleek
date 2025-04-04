@@ -44,7 +44,7 @@ const Navbar = () => {
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
     <nav className='flex justify-between items-center text-white py-4 md:py-6 px-6 md:px-6 font-variable'>
-        <h2 className='font-medium text-base sm:text-lg'>SleekFrame Studios</h2>
+        <a href='#home'><h2 className='font-medium text-base sm:text-lg'>SleekFrame Studios</h2></a>
             <div className="hidden md:flex h-full items-center gap-1">
               {navItems.map((item, index) => (
                 <a
@@ -56,7 +56,9 @@ const Navbar = () => {
                 </a>
               ))}
         </div>
+        <a href='mailto:sleekframe@gmail.com'>
         <h2 className='font-normal text-sm sm:text-base nav-hover-btn'>Let's Talk <span className="ml-2 group-hover:ml-3 transition-all">→</span></h2>
+        </a>
     </nav>
     </header>
     </div>

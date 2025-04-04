@@ -41,16 +41,16 @@ const About = () => {
     });
   }, []);
   return (
-    <div
-      className="max-h-screen mt-2 sm:mt-12 text-white px-6 lg:p-8"
+    <div id="about"
+      className="max-h-screen w-full mt-2 sm:mt-8 lg:mt-10 text-white px-6 lg:p-8"
       ref={containerRef}
     >
-      <div className="w-full md:px-12 relative mx-auto font-variable">
+      <div className="w-full sm:px-6 lg:px-12 relative font-variable">
         {/* H1 Lines */}
         {h1Lines.map((line, index) => (
           <div key={index} className="overflow-hidden">
             <h1
-              className="text-3xl md:text-5xl lg:text-5xl font-light leading-none"
+              className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-light leading-none"
               ref={(el) => (lineRefs.current[index] = el)}
             >
               {line}
@@ -58,11 +58,11 @@ const About = () => {
           </div>
         ))}
 
-        <div className="sm:hidden mt-8 h-[1px] w-full mx-auto bg-white"></div>
+        <div className="lg:hidden mt-8 h-[1px] w-full mx-auto bg-white"></div>
         <Curve />
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 mt-8 sm:mt-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-24 mt-8 sm:mt-6 lg:mt-0">
           {/* Left Column */}
           <div className="overflow-hidden">
             <h2
@@ -71,6 +71,11 @@ const About = () => {
             >
               {h2Line}
             </h2>
+            <video src="video/vid1.mp4"
+              autoPlay
+              loop
+              muted
+              className="w-[40vw] h-[34vh] lg:w-[17vw] lg:h-[30vh] hidden md:block pb-24 lg:pb-2 rounded-[15px] object-cover" />
           </div>
 
           {/* Right Column */}

@@ -39,14 +39,14 @@ const Hero = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full relative overflow-hidden font-variable">
+    <div id='home' className="min-h-screen w-full relative overflow-hidden font-variable">
       <div className="w-full px-6 pt-28 md:pt-32 md:px-[22%]">
-        <div className="w-[100%] md:w-[41%]">
+        <div className="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[45%]">
           {/* H3 Lines */}
           {h3Lines.map((line, index) => (
             <div key={index} className="overflow-hidden">
               <h3
-                className="text-3xl md:text-3xl leading-tight"
+                className="text-3xl sm:text-4xl lg:text-3xl leading-tight"
                 ref={(el) => (lineRefs.current[index] = el)}
               >
                 {line}
@@ -60,7 +60,7 @@ const Hero = () => {
               className={`overflow-hidden ${index === 0 ? "mt-5 md:mt-3" : ""}`} // 👈 only line 2 gets margin
             >
               <p
-                className="text-xl md:text-sm font-normal leading-tight"
+                className="text-xl sm:text-lg lg:text-base font-normal leading-tight"
                 ref={(el) => (lineRefs.current[index + h3Lines.length] = el)}
               >
                 {line}

@@ -63,7 +63,7 @@ export default function Contact() {
     return () => clearInterval(interval);
   }, [currentWordIndex]);
   return (
-    <main className="h-fit sm:h-fit bg-black text-white pb-32 sm:pb-28 py-8 flex flex-col px-6 md:px-16">
+    <main id="contact" className="h-fit bg-black text-white pb-32 sm:pb-28 flex flex-col px-6 md:px-16">
       <div className="text-7xl md:text-[10vw] font-variable font-light tracking-tight leading-[0.9]">
         <p>let’s discuss your</p>
         <p>
@@ -83,9 +83,11 @@ export default function Contact() {
       </div>
 
       <div className="mt-10 flex flex-col justify-center items-center">
+      <a href='mailto:sleekframe@gmail.com'>
         <button className="fancy-btn px-6 py-4 bg-white font-variable text-black font-semibold rounded-sm tracking-wider text-sm uppercase hover:bg-gray-200 transition-all">
           CONTACT US
         </button>
+        </a>
       </div>
     </main>
   );

@@ -81,7 +81,7 @@ const Curve = () => {
     };
   
     return (
-      <div className="relative hidden sm:block sm:w-full h-[6vh] my-2">
+      <div className="relative hidden lg:block lg:w-full h-[6vh] my-2">
         {/* Interaction area */}
         <div 
           onMouseEnter={manageMouseEnter}
