@@ -25,7 +25,7 @@ const Hero = () => {
   }, []);
 
   const h3Lines = [
-    "At SleekFrameStudios, ",
+    "At SleekFrameStudio, ",
     "we create immersive ",
     "digital experiences that ",
     "bring purposeful brands to life.",
@@ -83,10 +83,10 @@ const Hero = () => {
 
       <div id="hero" className="w-full absolute bottom-10 sm:bottom-8 px-6 md:bottom-6 lg:bottom-2 left-0">
         <h1
-          className="overflow-hidden text-[11.2vw] md:text-[12vw] font-normal tracking-tight leading-none whitespace-nowrap"
+          className="overflow-hidden text-[11.2vw] md:text-[12vw] lg:text-[12.8vw] font-normal tracking-tight leading-none whitespace-nowrap"
           ref={heroRef}
         >
-          SleekFrameStudios
+          SleekFrameStudio
         </h1>
       </div>
     </div>

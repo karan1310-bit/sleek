@@ -24,7 +24,7 @@ export default function Content() {
     
       return (
           <div className='flex px-6 md:px-12 lg:px-16 flex-col md:flex-row bottom-0 justify-between items-start gap-2 sm:gap-4 overflow-hidden'>
-              <h1 className='text-[8vw] md:text-[7vw] font-extrabold lg:text-[8vw] uppercase leading-tight'>SleekFrameStudios
+              <h1 className='text-[8vw] md:text-[7vw] font-extrabold lg:text-[8.5vw] uppercase leading-tight'>SleekFrameStudio
               </h1>
               <p className='font-extralight'>©copyright 2025</p>
           </div>
@@ -44,6 +44,7 @@ export default function Content() {
                   <h3 className='mb-2 hover-btn uppercase w-fit text-[#ffffff80]'>Contact</h3>
                   <p className='font-extralight'>+1 (778) 961-0904</p>
                   <p className='font-extralight'>sleekframe@gmail.com</p>
+                  <p className='font-extralight'>12921 111Ave Surrey BC</p>
                   <p className='font-extralight'>Linkedin</p>
                   <p className='font-extralight'>Instagram</p>
               </div>

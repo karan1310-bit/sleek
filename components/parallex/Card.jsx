@@ -29,18 +29,12 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
         <div className="flex flex-col md:flex-row h-full mt-8 sm:mt-6 md:mt-[50px] gap-4 sm:gap-6 md:gap-[50px]">
           {/* Description Section */}
           <div className="w-full md:w-[40%] lg:w-[40%] relative lg:top-[10%]">
-            <p className="text-base sm:text-base md:text-xl first-letter:text-lg sm:first-letter:text-xl md:first-letter:text-[28px] first-letter:font-['Title']">
+            <p className="text-base sm:text-base md:text-xl first-letter:text-lg sm:first-letter:text-xl md:first-letter:text-[28px]">
               {description}
             </p>
 
             <span className="flex items-center gap-[5px] mt-4 md:mt-0">
-              <a
-                href={url}
-                target="_blank"
-                className="text-xs cursor-pointer"
-              >
-                See more
-              </a>
+              
               <svg
                 width="22"
                 height="12"

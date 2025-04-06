@@ -19,7 +19,7 @@ const projects = [
     color: "#000000",
   },
   {
-    title: "Silencio",
+    title: "Portfolio",
     src: "silencio.png",
     color: "#000000",
   },
