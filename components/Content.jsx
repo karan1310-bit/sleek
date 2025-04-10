@@ -43,8 +43,8 @@ export default function Content() {
               <div className='flex flex-col gap-1 sm:gap-2'>
                   <h3 className='mb-2 hover-btn uppercase w-fit text-[#ffffff80]'>Contact</h3>
                   <p className='font-extralight'>+1 (778) 961-0904</p>
-                  <p className='font-extralight'>sleekframe@gmail.com</p>
-                  <p className='font-extralight'>12921 111Ave Surrey BC</p>
+                  <p className='font-extralight'>contact.sleekframe@gmail.com</p>
+                  <p className='font-extralight'>Surrey BC</p>
                   <p className='font-extralight'>Linkedin</p>
                   <p className='font-extralight'>Instagram</p>
               </div>

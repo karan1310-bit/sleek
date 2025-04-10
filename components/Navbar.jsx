@@ -44,7 +44,7 @@ const Navbar = () => {
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
     <nav className='flex justify-between items-center text-white py-4 md:py-6 px-6 md:px-6 font-variable'>
-        <a href='#home'><h2 className='font-medium text-base sm:text-lg'>SleekFrame Studios</h2></a>
+        <a href='#home'><h2 className='font-medium text-base sm:text-lg'>SleekFrame Studio</h2></a>
             <div className="hidden md:flex h-full items-center gap-1">
               {navItems.map((item, index) => (
                 <a
