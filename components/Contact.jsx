@@ -83,7 +83,7 @@ export default function Contact() {
       </div>
 
       <div className="mt-10 flex flex-col justify-center items-center">
-      <a href='mailto:sleekframe@gmail.com'>
+      <a href='mailto:contact.sleekframe@gmail.com'>
         <button className="fancy-btn px-6 py-4 bg-white font-variable text-black font-semibold rounded-sm tracking-wider text-sm uppercase hover:bg-gray-200 transition-all">
           CONTACT US
         </button>

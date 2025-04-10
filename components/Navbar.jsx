@@ -56,7 +56,7 @@ const Navbar = () => {
                 </a>
               ))}
         </div>
-        <a href='mailto:sleekframe@gmail.com'>
+        <a href='mailto:contact.sleekframe@gmail.com'>
         <h2 className='font-normal text-sm sm:text-base nav-hover-btn'>Let's Talk <span className="ml-2 group-hover:ml-3 transition-all">→</span></h2>
         </a>
     </nav>
