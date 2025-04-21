@@ -15,7 +15,7 @@ const ResponsiveCard = ({ i, title, description, src, url, color, progress, rang
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return  (
-    <div className="min-h-fit w-full flex items-center justify-center mt-4 sm:mt-0 font-variable sticky top-0 sm:py-4" ref={container}>
+    <div className="min-h-fit w-full flex items-center justify-center sm:mt-0 font-variable sticky top-0 sm:py-4" ref={container}>
       <motion.div
         className="flex flex-col relative w-fit h-[800px] sm:w-[700px] md:w-full md:h-[800px] lg:w-full lg:h-screen xl:w-full xl:h-screen px-6 py-4 sm:p-6 md:px-12 lg:px-20 lg:py-6 origin-top"
         style={{

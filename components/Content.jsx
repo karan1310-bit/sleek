@@ -46,7 +46,8 @@ export default function Content() {
                   <p className='font-extralight'>contact.sleekframe@gmail.com</p>
                   <p className='font-extralight'>Surrey BC</p>
                   <p className='font-extralight'>Linkedin</p>
-                  <p className='font-extralight'>Instagram</p>
+                  <a href='https://www.instagram.com/sleekframestudios?igsh=MWI3enl0a2dneHhucA=='>
+                  <p className='font-extralight'>Instagram</p></a>
               </div>
           </div>
       )
